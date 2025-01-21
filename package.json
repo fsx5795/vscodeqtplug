@@ -1,0 +1,26 @@
+{
+    "name": "qt-config",
+    "version": "0.0.0",
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "contributes": {
+        "configuration": {
+            "title": "QtConfig",
+            "properties": {
+                "qtconfig.qtkitdir": {
+                    "type": "string",
+                    "description": "形如 C:/Users/Nook/Videos/Qt5.15.2/5.15.2/msvc2019_64"
+                },
+                "qtconfig.vskitdir": {
+                    "type": "string",
+                    "description": "形如 C:\\Program Files (x86)\\Microsoft Visual Studio\\2022"
+                }
+            }
+        }
+    },
+    "activationEvents": [
+        "workspaceContains:*.pro"
+    ],
+    "main": "./extension.js"
+}
