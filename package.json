@@ -1,5 +1,6 @@
 {
     "name": "qt-config",
+    "publisher": "fsx5795",
     "version": "0.0.0",
     "engines": {
         "vscode": "^1.80.0"
@@ -8,13 +9,21 @@
         "configuration": {
             "title": "QtConfig",
             "properties": {
+                "qtconfig.mingwpath": {
+                    "type": "string",
+                    "description": "MinGW 安装路径，需要到 bin 之前的那个目录(The MinGW installation path needs to go to the directory before bin)。例如C:/Users/Nook/Videos/Qt5.15.2/Tools/mingw810_64"
+                },
+                "qtconfig.qtdir": {
+                    "type": "string",
+                    "description": "Qt安装路径，例如 C:/Users/Nook/Videos/Qt5.15.2"
+                },
                 "qtconfig.qtkitdir": {
                     "type": "string",
-                    "description": "形如 C:/Users/Nook/Videos/Qt5.15.2/5.15.2/msvc2019_64"
+                    "description": "Qt套件路径，例如 C:/Users/Nook/Videos/Qt5.15.2/5.15.2"
                 },
-                "qtconfig.vskitdir": {
+                "qtconfig.vcvarsall": {
                     "type": "string",
-                    "description": "形如 C:\\Program Files (x86)\\Microsoft Visual Studio\\2022"
+                    "description": "Visual Studio vcvarsall.bat (配置环境变量、工作目录批处理文件) 路径。 例如 C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Auxiliary/Build/vcvarsall.bat"
                 }
             }
         }
