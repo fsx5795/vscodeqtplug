@@ -13,3 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 })
+window.addEventListener('message', event => {
+    const message = event.data
+    console.log(message.text)
+    const dialog = document.querySelector('dialog')
+    dialog.show()
+})
