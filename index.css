@@ -4,3 +4,7 @@ div {
     margin-left: 20%;
     margin-right: 20%;
 }
+dialog {
+    width: 400px;
+    height: 600px;
+}
